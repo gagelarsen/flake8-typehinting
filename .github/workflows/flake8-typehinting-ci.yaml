@@ -9,7 +9,7 @@ jobs:
 # FLAKE
 # ----------------------------------------------------------------------------------------------
   flake:
-    name: Tox Project (${{ matrix.platform }}-Python${{python-version}})
+    name: Tox Project (${{ matrix.platform }}-Python${{ matrix.python-version }})
     runs-on: ${{ matrix.platform }}
 
     strategy:
