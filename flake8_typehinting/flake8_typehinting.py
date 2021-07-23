@@ -8,7 +8,7 @@ import sys
 from typing import Any, Generator, List, Tuple, Type
 
 if sys.version_info < (3, 8):
-    import importlib_metadata
+    import importlib_metadata  # pragma: no cover
 else:
     import importlib.metadata as importlib_metadata  # pragma: no cover
 
