@@ -42,6 +42,7 @@ jobs:
  # ----------------------------------------------------------------------------------------------
   package:
     name: Package flake8-typehinting
+    runs-on: ${{ matrix.platform }}
 
     strategy:
       fail-fast: false
