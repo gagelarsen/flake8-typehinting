@@ -31,7 +31,7 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 flake8-docstrings flake8-bugbear flake8-import-order pep8-naming
+          pip install tox flake8 flake8-docstrings flake8-bugbear flake8-import-order pep8-naming
       # Flake Code
       - name: Run Flake
         run: |
