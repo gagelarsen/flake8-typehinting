@@ -1,5 +1,5 @@
 # Type Hinting Flake8 Plugin
-
+    
 This is a simple plugin for checking type hinting. It does not 
 check all parts of the `pep484` standard. Feature request and
 pull requests will be accepted for adding more checks. 
