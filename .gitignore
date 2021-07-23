@@ -1,0 +1,10 @@
+.idea
+*.egg-info
+testing.py
+__pycache__
+**/*.pyc
+.tox
+dist
+.coverage
+**\.eggs
+coverage_html
