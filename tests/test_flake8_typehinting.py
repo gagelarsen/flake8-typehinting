@@ -76,3 +76,9 @@ def test_type_hinting_in_function_return_correct() -> None:
     """Test type hinting in function definitions."""
     ret = _results('def my_func(y: int, x: str = "1") -> int:\n    return 1')
     assert ret == set()
+
+
+def test_type_hinting_in_function_definition_cls() -> None:
+    """Test type hinting in function definitions."""
+    ret = _results('def my_func(cls, y: int, x="1") -> None:\n    print(x)')
+    assert ret == {'1:0 TH100 function missing type hints for arguments (x)'}
