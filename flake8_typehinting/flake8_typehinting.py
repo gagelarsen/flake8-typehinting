@@ -35,7 +35,7 @@ class Visitor(ast.NodeVisitor):
     def _check_th_100(self, node: ast.FunctionDef) -> None:
         """Check for TH100."""
         for arg in node.args.args:
-            if not arg.arg == 'self' and arg.annotation is None:
+            if arg.arg not in ('self', 'cls') and arg.annotation is None:
                 self.problems.append((node.lineno, node.col_offset, f'{TH100} ({arg.arg})'))
 
     def _check_th_101(self, node: ast.FunctionDef) -> None:
